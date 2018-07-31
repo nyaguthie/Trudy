@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Trudy Admin</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap4/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link rel="icon" href="images/icon/umber-thumb.jpg">
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER DESKTOP-->
+        <header class="header-pull d-none d-lg-block js-scroll-bar">
+            <div class="header-pull__inner">
+                <div class="logo">
+                    <a href="index1.html">
+                        <img src="images/icon/logo-black.png" alt="Umber" />
+                    </a>
+                </div>
+                <nav class="navbar-pull">
+                    <ul class="navbar-pull-list list-unstyled">
+                        <li class="has-dropdown">
+                            <a href="#">Users</a>
+
+                            <ul class="navbar-pull__dropdown list-unstyled">
+                                <li>
+                                    <a href="admin.html">Service Providers</a>
+                                </li>
+                                <li>
+                                    <a href="admin.html">Customers</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Categories</a>
+
+                            <ul class="navbar-pull__dropdown list-unstyled">
+                                <li>
+                                    <a href="admin.html">Plumbers</a>
+                                </li>
+                                <li>
+                                    <a href="admin.html">Electricians</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#">
+                        <i class="zmdi zmdi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- SEARCH MODAL-->
+        <div class="searchModal--right modal fade" id="searchModal" role="dialog">
+            <button class="close" type="button" data-dismiss="modal">
+                <i class="zmdi zmdi-close"></i>
+            </button>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form id="searchModal__form" method="POST">
+                            <input id="searchModal__input" type="text" name="search" placeholder="Search here..." />
+                            <button id="searchModal__submit" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SEARCH MODAL-->
+        <!-- END HEADER DESKTOP-->
+
+        <!-- HEADER MOBILE  -->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid clearfix">
+                    <a class="logo" href="index1.html">
+                        <img src="images/icon/logo-black.png" alt="Umber" />
+                    </a>
+                    <button class="hamburger hamburger--slider float-right" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-pull-list list-unstyled">
+                        <li class="has-dropdown">
+                            <a href="#">Users</a>
+
+                            <ul class="navbar-pull__dropdown list-unstyled">
+                                <li>
+                                    <a href="admin.html">Service Providers</a>
+                                </li>
+                                <li>
+                                    <a href="admin.html">Customers</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        
+                                <li>
+                                    <a href="index1.html">Logout</a>
+                                </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- PAGE PULL-->
+        <div class="page-pull">
+            <div class="recent-blog loginbg">
+                <div class="recent-blog__title-wrap clearfix">
+                    <h2 class="recent-blog__title float-right wow fadeInRight" data-wow-delay=".2s">Service Providers</h2>
+                </div>
+            </div>
+            <div class="cuscard text-primary bg-white mb-3 float-left col-md-3 p-3 mb-5">
+              <div class="card-icon col-md-3 float-left"><i class="icon-truck"></i></div>
+              <div class="col-md-8 float-right">
+                <h5 class="card-title">Transport</h5>
+                <p class="card-text">No of service providers registered as plumbers </p>
+              </div>
+            </div>
+            <div class="cuscard text-primary bg-white mb-3 float-left col-md-3 p-3 mb-5">
+              <div class="card-icon col-md-3 float-left"><i class="icon-t-shirt"></i></div>
+              <div class="col-md-8 float-right">
+                <h5 class="card-title">Laundry</h5>
+                <p class="card-text">No of service providers for laundry </p>
+              </div>
+            </div>
+            <div class="cuscard text-primary bg-white mb-3 float-left col-md-3 p-3 mb-5">
+              <div class="card-icon col-md-3 float-left"><i class="icon-shop"></i></div>
+              <div class="col-md-8 float-right">
+                <h5 class="card-title">Houskeeping</h5>
+                <p class="card-text">No of service providers for laundry </p>
+              </div>
+            </div>
+            <div class="cuscard text-primary bg-white mb-3 float-left col-md-3 p-3 mb-5">
+              <div class="card-icon col-md-3 float-left"><i class="icon-tv"></i></div>
+              <div class="col-md-8 float-right">
+                <h5 class="card-title">Electricians</h5>
+                <p class="card-text">No of service providers for laundry </p>
+              </div>
+            </div>
+                <div class="table-responsive">
+                    <table class="table table-checkout pl-5 thinny">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>ID/Passport</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class=""><img src="images/icon/freelancer-04.png" class="circle"> <p><b>Jadeline Doe</b></p><span class="fas fa-map-marker-alt text-primary"></span><span class="pl-2">Syokimau</span></td>
+                                <td class="">jd@doe.com</td>
+                                <td class="">0722 000 999</td>
+                                <td class="">12T56HH96</td>
+                                <th>
+                                   <span class="fa fa-eye text-primary"></span>
+                                    <span class="far fa-trash-alt ml-5 text-danger"></span>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              <!--   <div class="payment">
+                    <form class="payment-form" method="POST">
+                        <div class="au-input-group au-input-checkbox">
+                            <input type="checkbox" checked>
+                            <span>check payment</span>
+                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        </div>
+                        <div class="au-input-group au-input-checkbox">
+                            <input type="checkbox">
+                            <span>paypal</span>
+                            <div class="paypal-intro">
+                                <a href="#">
+                                    <img src="images/icon/paypal.jpg" alt="PayPal">
+                                </a>
+                                <span>
+                                    <a href="#">What is Paypal?</a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="au-btn au-btn--dark au-btn--p40 m-t-50" type="submit">place order</button>
+                </div> -->
+        </div>
+        <!-- END PAGE PULL-->
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap4/popper.min.js"></script>
+    <script src="vendor/bootstrap4/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/animejs/anime.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
